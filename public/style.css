@@ -8,13 +8,15 @@ body {
     min-width: 100svw;
     align-items: center;
     justify-content: center;
+    background: rgba(0, 0, 0, 0.0125);
 }
 
 a {
     display: block;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 0 0 0.5rem rgba(0, 0, 0, 0.0125);
+    box-shadow: 0 0 0 0.025rem rgba(0, 0, 0, 0.05);
+    background: white;
     border: 0.25rem solid white;
     perspective: 1000px;
 }
