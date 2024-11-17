@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    min-height: 100svh;
+    min-width: 100svw;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 0 0.5rem rgba(0, 0, 0, 0.0125);
+    border: 0.25rem solid white;
+    perspective: 1000px;
+}
+
+a big {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+a:hover big {
+    transform: rotateY(180deg);
+}
+
+a big img {
+    display: block;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+a big img:nth-child(1) {
+    transform: rotateY(180deg);
+}
