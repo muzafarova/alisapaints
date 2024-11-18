@@ -42,6 +42,6 @@ a big img {
     backface-visibility: hidden;
 }
 
-a big img:nth-child(1) {
+a big img:nth-child(2) {
     transform: rotateY(180deg);
 }
