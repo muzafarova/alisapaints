@@ -1,14 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Licorice&family=Meow+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color: white;
+}
+
 * {
     margin: 0;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     display: flex;
-    min-height: 100svh;
-    min-width: 100svw;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.075);
+    height: 100%;
+    justify-content: start;
+    background-color: rgba(0, 0, 0, 0.075);
+    background-image: url(./img/window.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--color);
 }
 
 a {
@@ -16,8 +33,8 @@ a {
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 0 0 0.025rem rgba(0, 0, 0, 0.05);
-    background: white;
-    border: 0.25rem solid white;
+    background-color: white;
+    border: 0.075rem solid var(--color);
     perspective: 1000px;
 }
 
@@ -44,4 +61,48 @@ a big img {
 
 a big img:nth-child(2) {
     transform: rotateY(180deg);
+}
+
+.clicker-script-regular {
+    font-family: 'Clicker Script', cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.meow-script-regular {
+    font-family: 'Meow Script', serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.licorice-regular {
+    font-family: 'Licorice', serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    margin: 0 0 1em;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.75), transparent);
+    padding: 4em 3em 2em 3em;
+    width: 100%;
+}
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+}
+
+.sub {
+    /* display: none; */
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    font-size: 85%;
+    line-height: 1;
+    padding: 0.75em 0;
 }
