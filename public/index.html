@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./style.css" />
 </head>
 
-<body>
+<body data-large="img/home.jpg">
     <header>
         <h1 class="licorice-regular">Alisa Muzafarova</h1>
         <div class="sub">Sketching & Watercolour</div>
@@ -36,6 +36,15 @@
             'floating-chat.donateButton.background-color': '#ffffff',
             'floating-chat.donateButton.text-color': '#323842'
         });
+    </script>
+
+    <script>
+        const body = document.querySelector('body');
+        const imgLarge = new Image();
+        imgLarge.src = body.dataset.large;
+        imgLarge.onload = () =>
+            body.style.backgroundImage = `url(${imgLarge.src})`;
+
     </script>
 </body>
 
